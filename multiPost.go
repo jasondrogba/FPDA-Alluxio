@@ -80,6 +80,7 @@ func processFile(file interface{}, workerHostname string) {
 			workerAddress := v.(map[string]interface{})["workerAddress"].(map[string]interface{})
 			host := workerAddress["host"].(string)
 			SetFile(host, name, lastAccessTime)
+
 		}
 		//fmt.Println("locations:", locations)
 
